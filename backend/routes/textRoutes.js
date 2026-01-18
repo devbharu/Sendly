@@ -15,8 +15,8 @@ router.post("/addText", async (req, res) => {
 
         await OtpModel.create({
             text,
-            otpHash,
-            expiresAt: new Date(Date.now() + 8 * 60 * 1000)
+            otp,
+            expiresAt: new Date(Date.now() + 5 * 60 * 1000)
         });
 
         console.log("OTP (testing):", otp);
@@ -32,7 +32,7 @@ router.post("/otp", async (req, res) => {
     try {
         const { otp } = req.body;
 
-        const record = await OtpModel.findOne().sort({ createdAt: -1 });
+        const record = await OtpModel.findOne({ otp })
 
         if (!record) {
             return res.status(400).json({ message: "OTP expired" });
