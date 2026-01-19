@@ -2,44 +2,59 @@
 <html lang="en">
 
 <head>
-  <!-- Required Meta -->
+  <!-- Basic Meta -->
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Title -->
-  <title>Sendly | Share Text Instantly – Paste & Send Online</title>
+  <!-- BRAND TITLE (MOST IMPORTANT) -->
+  <title>Sendly – Share Text Instantly</title>
 
-  <!-- SEO Meta Description -->
+  <!-- Brand-Focused SEO Description -->
   <meta name="description"
-    content="Sendly lets you instantly share text online — paste any text and generate a quick share link to send across devices or to others." />
+    content="Sendly is a simple web app to instantly share text and copy-paste content online. Paste text, share it securely, and access it anywhere." />
 
-  <!-- Keywords -->
+  <!-- Keywords (Brand + Intent) -->
   <meta name="keywords"
-    content="sendly, share text online, paste text, text sharing app, online text share, copy paste share, instant text transfer" />
+    content="Sendly, sendly app, share text, copy paste sharing, instant text sharing, online text share" />
 
   <!-- Robots -->
   <meta name="robots" content="index, follow" />
 
-  <!-- Open Graph / Social Shares -->
-  <meta property="og:title" content="Sendly | Share Text Instantly – Paste & Send Online" />
+  <!-- Author -->
+  <meta name="author" content="Sendly" />
+
+  <!-- Open Graph (Social + Google Brand Signals) -->
+  <meta property="og:title" content="Sendly – Share Text Instantly" />
   <meta property="og:description"
-    content="Paste any text and instantly share it with others using Sendly – a simple and fast text sharing service." />
+    content="Sendly helps you instantly share text and copy-paste content across devices." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://sendly-534l.vercel.app/" />
   <meta property="og:image" content="https://sendly-534l.vercel.app/og-image.png" />
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Sendly | Share Text Instantly – Paste & Send Online" />
-  <meta name="twitter:description"
-    content="Instantly share text online with Sendly – paste it and send it with a shareable link." />
-  <meta name="twitter:image" content="https://sendly-534l.vercel.app/twitter-preview.png" />
+  <meta name="twitter:title" content="Sendly – Share Text Instantly" />
+  <meta name="twitter:description" content="Paste text once and share it instantly using Sendly." />
+  <meta name="twitter:image" content="https://sendly-534l.vercel.app/og-image.png" />
+
+  <!-- Structured Data (CRITICAL FOR BRAND RANKING) -->
+  <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Sendly",
+        "url": "https://sendly-534l.vercel.app/",
+        "description": "Sendly is a web application that allows users to instantly share text and copy-paste content online.",
+        "applicationCategory": "UtilityApplication",
+        "operatingSystem": "All"
+      }
+    </script>
 
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
 
-  <!-- Performance Hints -->
+  <!-- Performance -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <script type="module" crossorigin src="/assets/index-DrKr_Eju.js"></script>
@@ -48,10 +63,13 @@
 
 <body>
   <noscript>
-    Sendly requires JavaScript — please enable JavaScript in your browser.
+    Sendly requires JavaScript to work properly. Please enable JavaScript.
   </noscript>
 
+  <!-- React Root -->
   <div id="root"></div>
+
+  <!-- React Entry -->
 </body>
 
 </html>
